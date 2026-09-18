@@ -1,0 +1,286 @@
+{
+  "model_type": "Decision Tree Regressor",
+  "dataset": "CDC 2022 Heart Attack Risk Predictors (JoseMBM Kaggle)",
+  "total_records": 246022,
+  "train_records": 196817,
+  "test_records": 49205,
+  "target": "HadHeartAttack (Risk Score: 0.0 to 1.0 / 0% to 100%)",
+  "positive_rate_percent": 5.46,
+  "best_hyperparameters": {
+    "max_depth": 6,
+    "min_samples_split": 20,
+    "min_samples_leaf": 100,
+    "criterion": "squared_error"
+  },
+  "cv_results": {
+    "folds": 5,
+    "cv_mse_mean": 0.03971850104934997,
+    "cv_rmse_mean": 0.19929176259842005,
+    "cv_mae_mean": 0.07897424196809977,
+    "cv_r2_mean": 0.23061872468740882,
+    "cv_folds_mse": [
+      0.03950290635028102,
+      0.04049698991316566,
+      0.039491904954465556,
+      0.03991883645744595,
+      0.03918186757139171
+    ],
+    "cv_folds_r2": [
+      0.23395534167492804,
+      0.23479426806835102,
+      0.22361434722255946,
+      0.227602879195286,
+      0.23312678727591962
+    ]
+  },
+  "test_metrics": {
+    "mse": 0.040019620582219646,
+    "rmse": 0.20004904544191068,
+    "mae": 0.07889499120407553,
+    "r2": 0.2248196801916572,
+    "min_predicted_risk": 0.007316099853678003,
+    "max_predicted_risk": 0.8165680473372781,
+    "mean_predicted_risk": 0.054010365923285744
+  },
+  "top_features": [
+    {
+      "feature": "HadAngina",
+      "importance": 83.53
+    },
+    {
+      "feature": "HadStroke",
+      "importance": 5.47
+    },
+    {
+      "feature": "Sex",
+      "importance": 2.31
+    },
+    {
+      "feature": "ChestScan",
+      "importance": 2.14
+    },
+    {
+      "feature": "SmokerStatus",
+      "importance": 1.4
+    },
+    {
+      "feature": "HadDiabetes",
+      "importance": 1.1
+    },
+    {
+      "feature": "DifficultyWalking",
+      "importance": 0.99
+    },
+    {
+      "feature": "AlcoholDrinkers",
+      "importance": 0.65
+    },
+    {
+      "feature": "PhysicalHealthDays",
+      "importance": 0.51
+    },
+    {
+      "feature": "GeneralHealth",
+      "importance": 0.51
+    }
+  ],
+  "detailed_features": [
+    {
+      "feature": "HadAngina_Yes",
+      "importance": 0.835315090033475
+    },
+    {
+      "feature": "HadStroke_Yes",
+      "importance": 0.05465563432388422
+    },
+    {
+      "feature": "Sex_Male",
+      "importance": 0.02314367902723425
+    },
+    {
+      "feature": "ChestScan_Yes",
+      "importance": 0.02135579524877843
+    },
+    {
+      "feature": "HadDiabetes_Yes",
+      "importance": 0.01100821034561719
+    },
+    {
+      "feature": "SmokerStatus_Never smoked",
+      "importance": 0.009878000466817211
+    },
+    {
+      "feature": "DifficultyWalking_Yes",
+      "importance": 0.009868228281363634
+    },
+    {
+      "feature": "AlcoholDrinkers_Yes",
+      "importance": 0.006453012471861605
+    },
+    {
+      "feature": "PhysicalHealthDays",
+      "importance": 0.005053637885570711
+    },
+    {
+      "feature": "AgeCategory_Age 80 or older",
+      "importance": 0.004807840570980572
+    },
+    {
+      "feature": "SmokerStatus_Former smoker",
+      "importance": 0.004102203076344723
+    },
+    {
+      "feature": "SleepHours",
+      "importance": 0.0029325149814007855
+    },
+    {
+      "feature": "HadKidneyDisease_Yes",
+      "importance": 0.002418995615731982
+    },
+    {
+      "feature": "GeneralHealth_Poor",
+      "importance": 0.0022143123792144844
+    },
+    {
+      "feature": "BMI",
+      "importance": 0.001982152984145761
+    },
+    {
+      "feature": "GeneralHealth_Good",
+      "importance": 0.001346844674786434
+    },
+    {
+      "feature": "GeneralHealth_Very good",
+      "importance": 0.0009501317532560247
+    },
+    {
+      "feature": "MentalHealthDays",
+      "importance": 0.0007517909960037331
+    },
+    {
+      "feature": "HadCOPD_Yes",
+      "importance": 0.0006277122490561682
+    },
+    {
+      "feature": "PhysicalActivities_Yes",
+      "importance": 0.000569182963424887
+    }
+  ],
+  "categorical_features": [
+    "AgeCategory",
+    "Sex",
+    "GeneralHealth",
+    "LastCheckupTime",
+    "PhysicalActivities",
+    "SmokerStatus",
+    "HadAngina",
+    "HadStroke",
+    "HadAsthma",
+    "HadCOPD",
+    "HadDepressiveDisorder",
+    "HadKidneyDisease",
+    "HadArthritis",
+    "HadDiabetes",
+    "DifficultyWalking",
+    "ChestScan",
+    "AlcoholDrinkers"
+  ],
+  "numerical_features": [
+    "BMI",
+    "PhysicalHealthDays",
+    "MentalHealthDays",
+    "SleepHours"
+  ],
+  "options": {
+    "AgeCategory": [
+      "Age 18 to 24",
+      "Age 25 to 29",
+      "Age 30 to 34",
+      "Age 35 to 39",
+      "Age 40 to 44",
+      "Age 45 to 49",
+      "Age 50 to 54",
+      "Age 55 to 59",
+      "Age 60 to 64",
+      "Age 65 to 69",
+      "Age 70 to 74",
+      "Age 75 to 79",
+      "Age 80 or older"
+    ],
+    "Sex": [
+      "Female",
+      "Male"
+    ],
+    "GeneralHealth": [
+      "Excellent",
+      "Fair",
+      "Good",
+      "Poor",
+      "Very good"
+    ],
+    "LastCheckupTime": [
+      "5 or more years ago",
+      "Within past 2 years (1 year but less than 2 years ago)",
+      "Within past 5 years (2 years but less than 5 years ago)",
+      "Within past year (anytime less than 12 months ago)"
+    ],
+    "PhysicalActivities": [
+      "No",
+      "Yes"
+    ],
+    "SmokerStatus": [
+      "Current smoker - now smokes every day",
+      "Current smoker - now smokes some days",
+      "Former smoker",
+      "Never smoked"
+    ],
+    "HadAngina": [
+      "No",
+      "Yes"
+    ],
+    "HadStroke": [
+      "No",
+      "Yes"
+    ],
+    "HadAsthma": [
+      "No",
+      "Yes"
+    ],
+    "HadCOPD": [
+      "No",
+      "Yes"
+    ],
+    "HadDepressiveDisorder": [
+      "No",
+      "Yes"
+    ],
+    "HadKidneyDisease": [
+      "No",
+      "Yes"
+    ],
+    "HadArthritis": [
+      "No",
+      "Yes"
+    ],
+    "HadDiabetes": [
+      "No",
+      "No, pre-diabetes or borderline diabetes",
+      "Yes",
+      "Yes, but only during pregnancy (female)"
+    ],
+    "DifficultyWalking": [
+      "No",
+      "Yes"
+    ],
+    "ChestScan": [
+      "No",
+      "Yes"
+    ],
+    "AlcoholDrinkers": [
+      "No",
+      "Yes"
+    ]
+  },
+  "trained_at": "2026-09-18 14:29:11",
+  "total_elapsed_seconds": 144.63
+}
